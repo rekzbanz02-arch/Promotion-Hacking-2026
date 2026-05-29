@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hacking Promotional Interview</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#222;
+      line-height:1.6;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:20px;
+    }
+
+    .header{
+      background:linear-gradient(135deg,#002147,#004080);
+      color:white;
+      padding:30px;
+      border-radius:18px;
+      margin-bottom:25px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.2);
+      text-align:  Center;
+    }
+
+    .header h1{
+      font-size:32px;
+      margin-bottom:10px;
+    }
+
+    .header p{
+      opacity:0.95;
+      font-size:16px;
+    }
+
+    .card{
+      background:white;
+      border-radius:16px;
+      margin-bottom:18px;
+      overflow:hidden;
+      box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .accordion{
+      width:100%;
+      background:#0b3d91;
+      color:white;
+      cursor:pointer;
+      padding:18px 22px;
+      border:none;
+      text-align:left;
+      outline:none;
+      font-size:18px;
+      font-weight:bold;
+      transition:0.3s;
+      position:relative;
+    }
+
+    .accordion::after{
+      content:'+';
+      position:absolute;
+      right:20px;
+      font-size:22px;
+      transition:0.3s;
+    }
+
+    .accordion.active::after{
+      content:'−';
+    }
+
+    .accordion:hover{
+      background:#1250b0;
+    }
+
+    .accordion.active{
+      background:#072d6b;
+    }
+
+    .panel{
+      background:white;
+      max-height:0;
+      overflow:hidden;
+      transition:max-height 0.35s ease;
+      padding:0 22px;
+    }
+
+    .content{
+      padding:22px 0;
+    }
+
+    h2{
+      color:#0b3d91;
+      margin-bottom:12px;
+    }
+
+    h3{
+      margin-top:18px;
+      margin-bottom:10px;
+      color:#003366;
+    }
+
+    ul{
+      padding-left:25px;
+      margin-top:10px;
+    }
+
+    li{
+      margin-bottom:10px;
+    }
+
+    .officer{
+      background:#eef4ff;
+      padding:14px;
+      border-left:5px solid #0b3d91;
+      border-radius:10px;
+      margin-bottom:12px;
+    }
+
+    .quote-box{
+      background:#f8fbff;
+      border-left:5px solid #0b3d91;
+      padding:18px;
+      border-radius:10px;
+      margin-top:15px;
+    }
+
+    .badge{
+      display:inline-block;
+      background:#0b3d91;
+      color:white;
+      padding:5px 12px;
+      border-radius:20px;
+      font-size:12px;
+      margin-bottom:14px;
+    }
+
+    .footer{
+      text-align:center;
+      padding:25px;
+      color:#555;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      .header{
+        padding:22px;
+      }
+
+      .header h1{
+        font-size:24px;
+      }
+
+      .accordion{
+        font-size:16px;
+        padding:16px;
+      }
+
+      .content{
+        padding:18px 0;
+      }
+strong {
+    color: #040b5f;
+}
+
+.block-indent {
+    margin-left: 20px;
+    //*text-align: justify;*//
+}
+
+    }
+
+
+    /* ── DISCLAIMER OVERLAY ── */
+    #disclaimer-overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,10,30,0.92);
+      backdrop-filter: blur(6px);
+      z-index: 9999;
+      display: flex; align-items: center; justify-content: center;
+      padding: 16px;
+    }
+    #disclaimer-box {
+      background: #fff;
+      border-radius: 18px;
+      max-width: 640px; width: 100%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      overflow: hidden;
+      animation: popIn 0.4s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    @keyframes popIn {
+      from { transform: scale(0.75) translateY(40px); opacity: 0; }
+      to   { transform: scale(1)    translateY(0);    opacity: 1; }
+    }
+    #disclaimer-header {
+      background: linear-gradient(135deg,#002147,#004080);
+      color: #fff;
+      padding: 22px 26px 16px;
+      display: flex; align-items: center; gap: 14px;
+    }
+    #disclaimer-header .shield-icon {
+      font-size: 36px; flex-shrink: 0;
+    }
+    #disclaimer-header h2 {
+      font-size: 18px; margin: 0; color: #fff;
+    }
+    #disclaimer-header p {
+      font-size: 12px; opacity: 0.8; margin: 4px 0 0;
+    }
+    #disclaimer-body {
+      padding: 20px 26px;
+      max-height: 52vh;
+      overflow-y: auto;
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: #333;
+    }
+    #disclaimer-body h3 {
+      color: #002147; font-size: 13px;
+      text-transform: uppercase; letter-spacing: 0.6px;
+      margin: 16px 0 6px;
+    }
+    #disclaimer-body h3:first-child { margin-top: 0; }
+    #disclaimer-body p { margin-bottom: 8px; }
+    #disclaimer-body ul { padding-left: 20px; margin-bottom: 8px; }
+    #disclaimer-body li { margin-bottom: 5px; }
+    #disclaimer-footer {
+      padding: 16px 26px 22px;
+      border-top: 1px solid #e8ecf4;
+    }
+    .checkbox-row {
+      display: flex; align-items: flex-start; gap: 10px;
+      margin-bottom: 14px; cursor: pointer;
+    }
+    .checkbox-row input[type=checkbox] {
+      margin-top: 3px; width: 17px; height: 17px;
+      accent-color: #0b3d91; cursor: pointer; flex-shrink: 0;
+    }
+    .checkbox-row label {
+      font-size: 13px; color: #333; cursor: pointer; line-height: 1.5;
+    }
+    #btn-agree {
+      width: 100%; padding: 13px;
+      background: #0b3d91; color: #fff;
+      border: none; border-radius: 10px;
+      font-size: 15px; font-weight: bold; cursor: pointer;
+      transition: 0.25s; opacity: 0.45; pointer-events: none;
+    }
+    #btn-agree.ready { opacity: 1; pointer-events: auto; }
+    #btn-agree.ready:hover { background: #1250b0; }
+    #btn-agree:active { transform: scale(0.98); }
+
+    /* ── ADMIN MODAL ── */
+    #admin-modal {
+      position: fixed; inset: 0;
+      background: rgba(0,10,30,0.88);
+      backdrop-filter: blur(6px);
+      z-index: 8888;
+      display: none; align-items: center; justify-content: center;
+      padding: 16px;
+    }
+    #admin-modal.open { display: flex; }
+    #admin-box {
+      background: #f4f7fb;
+      border-radius: 18px;
+      max-width: 820px; width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      animation: popIn 0.35s ease;
+    }
+    #admin-top {
+      background: linear-gradient(135deg,#002147,#004080);
+      color: #fff; padding: 20px 26px;
+      display: flex; justify-content: space-between; align-items: center;
+      position: sticky; top: 0; z-index: 1;
+    }
+    #admin-top h2 { margin: 0; font-size: 18px; }
+    #admin-close {
+      background: rgba(255,255,255,0.15); border: none;
+      color: #fff; border-radius: 8px; padding: 6px 14px;
+      cursor: pointer; font-size: 14px;
+    }
+    #admin-close:hover { background: rgba(255,255,255,0.25); }
+    #admin-login-area, #admin-panel-area { padding: 26px; }
+    #admin-login-area { text-align: center; }
+    #admin-passcode-input {
+      border: 2px solid #c5d3e8; border-radius: 10px;
+      padding: 10px 16px; font-size: 16px; letter-spacing: 4px;
+      width: 200px; text-align: center; margin: 12px 0;
+      outline: none;
+    }
+    #admin-passcode-input:focus { border-color: #0b3d91; }
+    #btn-admin-login {
+      display: block; margin: 0 auto;
+      background: #0b3d91; color: #fff;
+      border: none; border-radius: 10px;
+      padding: 10px 30px; font-size: 14px; cursor: pointer;
+    }
+    #btn-admin-login:hover { background: #1250b0; }
+    #admin-error { color: #c0392b; font-size: 13px; margin-top: 8px; }
+    .admin-stat-row {
+      display: flex; gap: 14px; margin-bottom: 20px; flex-wrap: wrap;
+    }
+    .admin-stat {
+      flex: 1; min-width: 130px;
+      background: white; border-radius: 14px;
+      padding: 18px 20px; text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .admin-stat .num { font-size: 32px; font-weight: 900; color: #0b3d91; }
+    .admin-stat .lbl { font-size: 12px; color: #666; margin-top: 4px; }
+    #devices-table-wrap { overflow-x: auto; }
+    #devices-table {
+      width: 100%; border-collapse: collapse; font-size: 13px;
+      background: white; border-radius: 14px; overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    #devices-table th {
+      background: #0b3d91; color: white;
+      padding: 11px 14px; text-align: left; font-size: 12px;
+    }
+    #devices-table td { padding: 10px 14px; border-bottom: 1px solid #eef0f7; }
+    #devices-table tr:last-child td { border-bottom: none; }
+    #devices-table tr:hover td { background: #f0f5ff; }
+    .device-id-cell { font-family: monospace; font-size: 11px; color: #555; }
+
+    /* ── ADMIN FOOTER TRIGGER ── */
+    .footer-admin-btn {
+      display: inline-block; margin-top: 8px;
+      color: #bbb; font-size: 11px; cursor: pointer;
+      text-decoration: none; user-select: none;
+    }
+    .footer-admin-btn:hover { color: #0b3d91; }
+
+    /* ── LOADING SPINNER in admin ── */
+    .spinner {
+      width: 28px; height: 28px; border: 3px solid #c5d3e8;
+      border-top-color: #0b3d91; border-radius: 50%;
+      animation: spin 0.7s linear infinite; margin: 20px auto;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+  </style>
+</head>
+
+<body>
+
+<!-- ═══════════════ DISCLAIMER OVERLAY ═══════════════ -->
+<div id="disclaimer-overlay">
+  <div id="disclaimer-box">
+    <div id="disclaimer-header">
+      <span class="shield-icon">🛡️</span>
+      <div>
+        <h2>Information Portal — User Agreement &amp; Disclaimer</h2>
+        <p>Please read carefully before proceeding</p>
+      </div>
+    </div>
+
+    <div id="disclaimer-body">
+      <h3>1. Purpose &amp; Nature of this Portal</h3>
+      <p>This portal is an <strong>unofficial, independently maintained</strong> information resource intended to assist personnel in reviewing organizational knowledge, promotion board preparation, and unit orientation. It is <strong>not an official publication</strong> or what so ever.</p>
+
+      <h3>2. Authorized Users</h3>
+      <p>Access is intended solely for:</p>
+      <ul>
+        <li>Personnel who will undergo promotional interview.</li>
+        <li>Authorized support staff and administrators of this portal.</li>
+      </ul>
+      <p>Unauthorized access, reproduction, or redistribution of any content herein is strictly prohibited.</p>
+
+      <h3>3. Accuracy &amp; Reliability</h3>
+      <p>While reasonable efforts are made to ensure accuracy, information on this portal may not reflect the most current official directives, orders, or personnel assignments. Users are responsible for verifying all information against official issuances and memoranda.</p>
+
+      <h3>4. Device &amp; Session Monitoring</h3>
+      <p>By accessing this portal, you acknowledge and consent that:</p>
+      <ul>
+        <li>A <strong>unique device fingerprint</strong> (browser, screen, platform, language, and timezone data) will be collected and stored for access analytics and security purposes.</li>
+        <li>This data does not personally identify you but helps the administrator monitor portal usage and detect unauthorized access.</li>
+        <li>No sensitive personal data (name, badge number, rank) is collected by the portal itself.</li>
+      </ul>
+
+      <h3>5. Intellectual Property</h3>
+      <p>Content derived from official manuals, circulars, and doctrine documents remains the intellectual property of the PNP organization. The portal's arrangement, interface, and supplementary materials are the work of the portal developer (RekzBanz).</p>
+
+      <h3>6. Limitation of Liability</h3>
+      <p>The portal developer shall not be held liable for any decisions made, actions taken, or outcomes resulting from reliance on information contained in this portal. Use at your own discretion.</p>
+
+      <h3>7. Acceptance</h3>
+      <p>By checking the boxes below and clicking <em>"I Agree — Enter Portal"</em>, you confirm that you have read, understood, and agree to these terms. Declining will exit the page.</p>
+    </div>
+
+    <div id="disclaimer-footer">
+      <div class="checkbox-row">
+        <input type="checkbox" id="chk1">
+        <label for="chk1">I have read and understood the User Agreement and Disclaimer above, I consent to the collection of anonymous device fingerprint data for access analytics and security monitoring, and I confirm that I am an authorized user (active PNP personnel or authorized support staff).</label>
+      </div>
+      <button id="btn-agree" disabled>✅ &nbsp;I Agree — Enter Portal</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ ADMIN MODAL ═══════════════ -->
+<div id="admin-modal">
+  <div id="admin-box">
+    <div id="admin-top">
+      <h2>🔐 Admin Panel — Device Registry</h2>
+      <button id="admin-close">✕ Close</button>
+    </div>
+
+    <!-- Login -->
+    <div id="admin-login-area">
+      <p style="color:#555;font-size:14px;margin-bottom:4px;">Enter admin passcode to continue</p>
+      <br>
+      <input type="password" id="admin-passcode-input" maxlength="20" placeholder="••••••">
+      <br>
+      <button id="btn-admin-login">Unlock</button>
+      <p id="admin-error"></p>
+    </div>
+
+    <!-- Panel (hidden until authenticated) -->
+    <div id="admin-panel-area" style="display:none;"></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1><strong> Kulba hinam:</strong> Promotional Interview</h1>
+    <p>
+      "Hack the interview. Master the doctrine. Own the promotion."
+    </p>
+  </div>
+
+  <!-- KEY OFFICERS -->
+  <div class="card">
+    <button class="accordion">PRO 10 Key Officers</button>
+
+    <div class="panel">
+      <div class="content">
+
+        <span class="badge">Leadership Directory</span>
+
+        <div class="officer">
+          <strong>PBGEN CHRISTOPHER NORTEZ ABRAHANO</strong><br>
+          Regional Director (RD)
+        </div>
+
+        <div class="officer">
+          <strong>PCOL AARON MONTALAN MANDIA</strong><br>
+          Acting Deputy Regional Director for Administration (ADRDA)
+        </div>
+
+        <div class="officer">
+          <strong>PCOL EDILBERTO BUENTIEMPO PITALLANO</strong><br>
+          Acting Deputy Regional Director for Operations (ADRDO)
+        </div>
+
+        <div class="officer">
+          <strong>PCOL NELVIN MONTERY RICOHERMOSO</strong><br>
+          Chief Regional Staff (CRS)
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- REGIONAL STAFF -->
+  <div class="card">
+    <button class="accordion">Regional Staff</button>
+
+    <div class="panel">
+      <div class="content">
+
+        <ul>
+          <li><strong>PCOL ELIAS D HAMPAC</strong> - Chief, RPRMD</li>
+          <li><strong>PLTCOL KARLO EDEN L MAHINAY</strong> - OIC, RID</li>
+          <li><strong>PCOL REYNANTE R REYES</strong> - Chief, ROD</li>
+          <li><strong>PCOL SALVADOR N RADAM</strong> - Chief, RLRDD</li>
+          <li><strong>PCOL RAMIL J WAPER</strong> - Chief, RCADD</li>
+          <li><strong>PCOL LUCILE S FAYCHO</strong> - Chief, RCD</li>
+          <li><strong>PCOL JOVIT L CULAWAY</strong> - Chief, RIDMD</li>
+          <li><strong>PCOL MA ANA FE B LAZA</strong> - Chief, RETD</li>
+          <li><strong>PLTCOL JORAM P JUMALON</strong> - Assistant Chief, RPSMD</li>
+          <li><strong>PCOL MARILOU V TAMBIS</strong> - Chief, RICTMD</li>
+          <li><strong>PCOL ISRALENE Z LAUREN</strong> - Chief, RHSU</li>
+          <li><strong>PCOL AL MARTENES ABANALES</strong> - PD, MORPPO</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+<!-- PNP FOCUSED AGENDA (EMMIC) -->
+  <div class="card">
+    <button class="accordion">PNP FOCUSED AGENDA (EMMIC)</button>
+
+    <div class="panel">
+      <div class="content">
+
+        <h2>PNP The 5 Pillars of the EMMIC Framework</h2>
+
+<strong>E - nhanced Managing Police Operations
+<br>M - anagement of Resources
+<br>M - orale & Welfare
+<br>I - ntegrity Monitoring
+<br>C - ommunity Support</strong>
+
+<br><br>
+<strong>E - nhanced Managing Police Operations: </strong>
+<p class="block-indent">Focuses on evidence-based policing strategies, strengthened border security, and proactive preventive patrols to drive down crime rates.</p>
+<br>
+<strong>M - anagement of Resources: </strong>
+<p class="block-indent">Ensures the prudent, transparent, and effective use of organizational funds, logistics, and personnel assets.</p>
+<br>
+<strong>M - orale & Welfare: </strong>
+<p class="block-indent">Prioritizes the health, competence, and motivation of police personnel to create a dedicated and professional workforce.</p>
+<br>
+<strong>I - ntegrity Monitoring: </strong>
+<br><p class="block-indent">Enforces strict discipline, accountability, and lifestyle checks to eliminate corruption and misconduct across all ranks.</p>
+<br>
+<strong>C - ommunity Support: </strong>
+<br><p class="block-indent">Highlights the reality that the PNP's strength relies on public cooperation, emphasizing open communication and strong partnerships with local barangays.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- PROMOTION BOARD BRAVO QUESTIONS -->
+<div class="card">
+  <button class="accordion">ROLETA NG KAPALARAN!!! (Q & A)</button>
+
+  <div class="panel">
+    <div class="content">
+
+      <div class="quote-box">
+        <p><strong>1. Why is operational planning critical before conducting police operations?</strong><br>
+        Operational planning minimizes risks, defines objectives, allocates resources, establishes coordination, and ensures lawful and efficient conduct of operations.</p>
+
+        <br><p><strong>2. What are the consequences of conducting an operation without proper coordination?</strong><br>
+        It may result in operational failure, misencounter, administrative liability, compromise of mission, and possible violation of operational procedures.</p>
+
+        <br><p><strong>3. Explain the principle of "necessity" in the use of force.</strong><br>
+        Force should only be used when strictly necessary to achieve a lawful objective and when peaceful means are ineffective.</p>
+
+        <br><p><strong>4. Explain the principle of "proportionality" in police operations.</strong><br>
+        The level of force used must match the level of resistance or threat posed by the suspect.</p>
+
+        <br><p><strong>5. Under POP 2021, when may deadly force be employed?</strong><br>
+        Deadly force may be used only when there is imminent danger of death or serious physical injury to police officers or civilians.</p>
+
+        <br><p><strong>6. Why must police officers issue a warning before using firearms whenever feasible?</strong><br>
+        Warnings give suspects an opportunity to surrender peacefully and reduce unnecessary injury or death.</p>
+
+        <br><p><strong>7. Why is the preservation of life considered the highest priority during police operations?</strong><br>
+        The PNP adheres to the constitutional principle of valuing human life and protecting human rights.</p>
+
+        <br><p><strong>8. Explain the importance of probable cause in warrantless arrests.</strong><br>
+        Probable cause protects individuals from arbitrary arrest and ensures arrests are based on facts and circumstances.</p>
+
+        <br><p><strong>9. What is the danger of relying solely on confidential informants during arrests?</strong><br>
+        Unverified information may lead to unlawful arrests, mistaken identity, and violation of constitutional rights.</p>
+
+        <br><p><strong>10. Why should police officers avoid unnecessary delay in bringing arrested persons to proper authorities?</strong><br>
+        Delay may violate constitutional rights and expose officers to criminal and administrative liability.</p>
+
+        <br><p><strong>11. What are the dangers of mishandling crime scenes?</strong><br>
+        Mishandling may contaminate evidence, weaken prosecution, and compromise the integrity of investigations.</p>
+
+        <br><p><strong>12. Explain the significance of chain of custody in drug cases.</strong><br>
+        Chain of custody preserves the identity and integrity of seized evidence from confiscation until presentation in court.</p>
+
+        <br><p><strong>13. Why are body-worn cameras important in police operations?</strong><br>
+        They enhance transparency, accountability, evidence documentation, and protection against false accusations.</p>
+
+        <br><p><strong>14. Under POP 2021, why is maximum tolerance emphasized during rallies?</strong><br>
+        Maximum tolerance protects freedom of expression and prevents unnecessary violence.</p>
+
+        <br><p><strong>15. What constitutes excessive force?</strong><br>
+        Excessive force is force beyond what is necessary and reasonable under the circumstances.</p>
+
+        <br><p><strong>16. Why must checkpoints be visibly marked and properly identified?</strong><br>
+        Visible markings prevent public fear, confusion, and allegations of illegal checkpoints.</p>
+
+        <br><p><strong>17. What is the legal basis for stop-and-frisk operations?</strong><br>
+        It is based on reasonable suspicion supported by observable facts indicating criminal activity.</p>
+
+        <br><p><strong>18. Why can stop-and-frisk not be conducted randomly?</strong><br>
+        Random searches violate constitutional rights against unreasonable searches and seizures.</p>
+
+        <br><p><strong>19. Why is documentation important after police operations?</strong><br>
+        Documentation establishes accountability, legality, transparency, and operational accuracy.</p>
+
+        <br><p><strong>20. What are the liabilities of police officers who violate human rights during operations?</strong><br>
+        They may face administrative sanctions, criminal prosecution, and civil liability.</p>
+
+        <br><p><strong>21. Why must police officers maintain neutrality during political activities?</strong><br>
+        Political neutrality preserves public trust and prevents abuse of authority.</p>
+
+        <br><p><strong>22. Explain the responsibilities of first responders during emergencies.</strong><br>
+        They secure the scene, save lives, preserve evidence, control crowds, and coordinate rescue efforts.</p>
+
+        <br><p><strong>23. Why is operational briefing necessary before deployment?</strong><br>
+        Briefing ensures personnel understand objectives, assignments, risks, and rules of engagement.</p>
+
+        <br><p><strong>24. What are the risks of poor communication during police operations?</strong><br>
+        Poor communication may lead to confusion, operational failure, friendly fire incidents, and loss of control.</p>
+
+        <br><p><strong>25. Why must arrested minors be handled differently?</strong><br>
+        Minors are protected by juvenile justice laws emphasizing rehabilitation rather than punishment.</p>
+
+        <br><p><strong>26. What is the role of the desk officer during critical incidents?</strong><br>
+        The desk officer records incidents, dispatches units, coordinates communications, and monitors developments.</p>
+
+        <br><p><strong>27. Why should police officers avoid media exposure during sensitive operations?</strong><br>
+        Improper disclosure may compromise investigations, operational security, and privacy rights.</p>
+
+        <br><p><strong>28. What are the dangers of improper evidence handling?</strong><br>
+        Improper handling may render evidence inadmissible and weaken criminal cases.</p>
+
+        <br><p><strong>29. Why is coordination with barangay officials important during community operations?</strong><br>
+        Coordination strengthens community support, peacekeeping, and local intelligence gathering.</p>
+
+        <br><p><strong>30. Explain the role of police discretion in law enforcement.</strong><br>
+        Police discretion allows officers to make lawful and reasonable decisions based on circumstances.</p>
+
+        <br><p><strong>31. What is the importance of after-operation reports?</strong><br>
+        After-operation reports document actions taken, lessons learned, and accountability of personnel.</p>
+
+        <br><p><strong>32. Why must search warrants be implemented strictly according to procedure?</strong><br>
+        Failure to follow procedure may invalidate the search and violate constitutional rights.</p>
+
+        <br><p><strong>33. Explain the importance of proper marking of evidence.</strong><br>
+        Proper marking identifies evidence clearly and preserves authenticity for court presentation.</p>
+
+        <br><p><strong>34. Why is there a need for police visibility in communities?</strong><br>
+        Police visibility deters crime, reassures the public, and improves response capability.</p>
+
+        <br><p><strong>35. What are the dangers of abuse of authority?</strong><br>
+        Abuse of authority damages public trust, violates rights, and exposes officers to liability.</p>
+
+        <br><p><strong>36. Why should police officers avoid unnecessary use of handcuffs?</strong><br>
+        Improper use may violate human rights and constitute excessive force.</p>
+
+        <br><p><strong>37. Explain the role of ethics in police decision-making.</strong><br>
+        Ethics guide officers to act lawfully, fairly, and responsibly in all situations.</p>
+
+        <br><p><strong>38. Why is discipline considered the foundation of police organization?</strong><br>
+        Discipline ensures obedience, professionalism, unity, and effective law enforcement.</p>
+
+        <br><p><strong>39. What is the importance of situational awareness during police operations?</strong><br>
+        Situational awareness helps officers identify threats, make sound decisions, and ensure safety.</p>
+
+        <br><p><strong>40. Why should police officers avoid prejudice and discrimination?</strong><br>
+        Bias undermines justice, violates human rights, and damages public confidence.</p>
+
+        <br><p><strong>41. Why is accountability important in police service?</strong><br>
+        Accountability ensures transparency, responsibility, and public confidence in law enforcement.</p>
+
+        <br><p><strong>42. What are the effects of corruption within the police organization?</strong><br>
+        Corruption weakens public trust, undermines justice, and damages organizational integrity.</p>
+
+        <br><p><strong>43. How can police leaders improve operational effectiveness?</strong><br>
+        By providing training, supervision, discipline, proper planning, and motivating personnel.</p>
+
+        <br><p><strong>44. What are the consequences of violating operational procedures?</strong><br>
+        Violations may result in administrative, criminal, or civil liability and may compromise police credibility and court cases.</p>
+
+        <br><p><strong>45. How can police officers balance aggressive law enforcement with respect for human rights?</strong><br>
+        Police officers must strictly follow lawful procedures, apply only necessary force, respect constitutional rights, and prioritize peaceful resolution whenever possible while still enforcing the law effectively.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  
+  <!-- POLICE OFFICER'S CREED -->
+  <div class="card">
+    <button class="accordion">Police Officer's Creed</button>
+
+    <div class="panel">
+      <div class="content">
+
+        <h2>THE POLICE OFFICER'S CREED</h2>
+
+        <div class="quote-box">
+
+          I believe in <strong>God</strong>, the Supreme Being, a Great Provider, and the Creator of all men and everything dear to me.
+<br><br>I believe that <strong>respect</strong> for authority is a duty.
+<br><br>I believe in <strong>selfless love</strong> and service to people.
+<br><br>I believe in the <strong>sanctity</strong> of marriage and family life.
+<br><br>I believe in the <strong>responsible</strong> dominion and stewardship over material things.
+<br><br>I believe in the <strong>wisdom</strong> of truthfulness.
+
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ POLICE OFFICER'S PLEDGE ═══ -->
+  <div class="card">
+    <button class="accordion">
+      <span class="section-icon"></span> POLICE OFFICER'S PLEDGE
+    </button>
+    <div class="panel">
+      <div class="content">
+
+        <h2>POLICE OFFICER'S PLEDGE</h2>
+
+        <div class="quote-box">
+          <p>
+            I will <strong>love</strong> and serve God, my country, and people;<br><br>
+            I will <strong>uphold</strong> the Constitution and obey legal orders
+            of the duly constituted authorities;<br><br>
+            I will <strong>oblige</strong> myself to maintain a high standard
+            of morality and professionalism;<br><br>
+            I will <strong>respect</strong> the customs and traditions
+            of the police service and<br><br>
+            I will <strong>live</strong> a decent and virtuous life to serve as an example to others.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CODE OF ETHICS -->
+  <div class="card">
+    <button class="accordion">Law Enforcement Code of Ethics</button>
+
+    <div class="panel">
+      <div class="content">
+
+        <div class="quote-box">
+
+          As a law enforcement officer, my fundamental duty is to serve the community; to safeguard lives and property; to protect the innocent against deception, the weak against oppression or intimidation and the peaceful against violence or disorder; and to respect the constitutional rights of all to liberty, equality and justice.
+<br><br>I will keep my private life unsullied as an example to all and will behave in a manner that does not bring discredit to me or to my agency. I will maintain courageous calm in the face of danger, scorn or ridicule; develop self-restraint; and be constantly mindful of the welfare of others. Honest in thought and deed both in my personal and official life, I will be exemplary in obeying the law and the regulations of my department. Whatever I see or hear of a confidential nature or that is confided to me in my official capacity will be kept ever secret unless revelation is necessary in the performance of my duty.
+<br><br>I will never act officiously or permit personal feelings, prejudices, political beliefs, aspirations, animosities or friendships to influence my decisions. With no compromise for crime and the relentless prosecution of criminals, I will enforce the law courteously and appropriately without fear or favor, malice or ill will, never employing unnecessary force or violence and never accepting gratuities.
+<br><br>I recognize the badge of my office as a symbol of public faith, and I accept it as a public trust to be held so long as I am true to the ethics of the police service. I will never engage in acts of corruption or bribery, nor will I condone such acts by other police officers. I will cooperate with all legally authorized agencies and their representatives in the pursuit of justice.
+<br><br>I know that I alone am responsible for my own standard of professional performance and will take every reasonable opportunity to enhance and improve my level of knowledge and competence.
+<br><br>I will constantly strive to achieve these objectives and ideals, dedicating myself before God to my chosen profession . . . law enforcement.
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- QUALITY POLICY -->
+  <div class="card">
+    <button class="accordion">PRO10 Quality Policy Statement</button>
+
+    <div class="panel">
+      <div class="content">
+
+        <h2>PRO10 Quality Policy Statement</h2>
+
+Police Regional Office (PRO) 10 is committed to delivering competent police services through empowered personnel, strong community partnerships, and professional law enforcement, guided by God-centered values, environmentally responsible, smart policing in Northern Mindanao, and compliance with regulatory and other applicable requirements.
+PRO 10 aims to:
+<br><br>Reduce crime incidents in Northern Mindanao through responsive, intelligence-driven, and community-based crime prevention and law enforcement strategies tailored to regional and local security conditions;
+<br><br>Improve crime solution through enhanced case investigation, case monitoring, and research and analysis programs, ensuring efficiency and reliability of investigative operations;
+<br><br>Implement a quality-driven and progressive anti-criminality plan to prevent, suppress, and respond to criminal activities through systematic, data-driven and risk-based approaches;
+<br><br>Execute and maintain information operations, public information campaigns, and community affairs and development strategies through an empowered community in pursuit of strong community partnerships;
+<br><br>Administer police operations through reporting, coordination with stakeholders, and continuous information and education campaigns to build trust and ensure accountability;
+<br><br>Optimize the utilization of financial, logistical, and technological resources to ensure operational readiness, mobility, and adequate support for crime prevention, investigation, intelligence, and community relations activities across Northern Mindanao;
+<br><br>Promote the competence, discipline, and professionalism of personnel through continuous training and performance evaluation, supporting the continual improvement of skills and knowledge;
+<br><br>Advance environmental responsibility through waste reduction, resource efficiency, and minimizing environmental impact;
+<br><br>Systematically identify, assess, and control risks and threats that could impact service delivery, data security, operations, and compliance with regulatory and other requirements; and
+<br><br>Effective implementation of the PNP Information and Communications Technology (ICT) programs, collaborative ICT management, communications, and electronics system across the region.
+<br><br>PBGEN CHRISTOPHER N ABRAHANO Regional Director, Police Regional Office 10
+
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <!-- IMPLEMENTATION -->
+  <div class="card">
+    <div class="content" style="padding:22px;">
+      <span class="badge">Implementation Guide</span>
+      <h2>7S Application</h2>
+    </div>
+
+    <button class="accordion">1. SORT</button>
+    <div class="panel">
+      <div class="panel-content" style="padding:16px 22px;">
+        <ul>
+          <li>Remove unnecessary items.</li>
+          <li>Use red tags for unused materials.</li>
+          <li>Keep, store, or discard items appropriately.</li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="accordion">2. SYSTEMATIZE</button>
+    <div class="panel">
+      <div class="panel-content" style="padding:16px 22px;">
+        <ul>
+          <li>Label shelves and storage areas.</li>
+          <li>Arrange items for easy access.</li>
+          <li>Use color coding where necessary.</li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="accordion">3. SHINE</button>
+    <div class="panel">
+      <div class="panel-content" style="padding:16px 22px;">
+        <ul>
+          <li>Clean work areas regularly.</li>
+          <li>Inspect equipment for defects.</li>
+          <li>Maintain cleanliness standards.</li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="accordion">4. STANDARDIZE</button>
+    <div class="panel">
+      <div class="panel-content" style="padding:16px 22px;">
+        <ul>
+          <li>Create SOPs and visual guides.</li>
+          <li>Use consistent labels and procedures.</li>
+          <li>Maintain uniform practices.</li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="accordion">5. SELF-DISCIPLINE</button>
+    <div class="panel">
+      <div class="panel-content" style="padding:16px 22px;">
+        <ul>
+          <li>Follow standards consistently.</li>
+          <li>Conduct regular audits.</li>
+          <li>Lead by example.</li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="accordion">6. SAFETY</button>
+    <div class="panel">
+      <div class="panel-content" style="padding:16px 22px;">
+        <ul>
+          <li>Identify and remove hazards.</li>
+          <li>Maintain emergency equipment.</li>
+          <li>Ensure safe work practices.</li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="accordion">7. SUSTAIN</button>
+    <div class="panel">
+      <div class="panel-content" style="padding:16px 22px;">
+        <ul>
+          <li>Conduct regular evaluations.</li>
+          <li>Monitor improvements.</li>
+          <li>Promote continuous improvement.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    PRO 10 Information Portal &bull; Responsive Accordion Interface
+    <br>
+    <span class="footer-admin-btn" id="open-admin-btn" title="Admin Access">⚙ Admin</span>
+  </div>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+
+  /* ─── ACCORDION ─── */
+  const accordions = document.querySelectorAll(".accordion");
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("click", function(){
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if(panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  });
+
+  /* ─── CONFIG ─── */
+  const JSONBIN_API_KEY = "$2a$10$QRwVf3OgkrsAGNkRCgouRebBADnAcFGs/l8ZzN8YICcI7/NCaf3Ia";
+  const JSONBIN_BIN_ID  = "6a1947cdddf5aa59f7734379";
+  const ADMIN_PASSCODE  = "197683"; // Change this passcode as needed
+
+  /* ─── DEVICE FINGERPRINT ─── */
+  function buildFingerprint() {
+    const nav   = window.navigator;
+    const scr   = window.screen;
+    const parts = [
+      nav.userAgent,
+      nav.language,
+      scr.colorDepth,
+      scr.width + "x" + scr.height,
+      Intl.DateTimeFormat().resolvedOptions().timeZone,
+      nav.platform,
+      nav.hardwareConcurrency || "?",
+      nav.maxTouchPoints || "0"
+    ];
+    return parts.join("|");
+  }
+
+  async function hashString(str) {
+    const msgUint8  = new TextEncoder().encode(str);
+    const hashBuf   = await crypto.subtle.digest("SHA-256", msgUint8);
+    const hashArray = Array.from(new Uint8Array(hashBuf));
+    return hashArray.map(b => b.toString(16).padStart(2,"0")).join("").slice(0, 32);
+  }
+
+  async function getDeviceId() {
+    const fp   = buildFingerprint();
+    const hash = await hashString(fp);
+    return hash;
+  }
+
+  /* ─── JSONBIN HELPERS ─── */
+  const JSONBIN_BASE = "https://api.jsonbin.io/v3/b/" + JSONBIN_BIN_ID;
+
+  async function fetchBin() {
+    const res = await fetch(JSONBIN_BASE + "/latest", {
+      headers: { "X-Master-Key": JSONBIN_API_KEY }
+    });
+    if (!res.ok) throw new Error("Fetch failed: " + res.status);
+    const data = await res.json();
+    return data.record;
+  }
+
+  async function updateBin(record) {
+    const res = await fetch(JSONBIN_BASE, {
+      method: "PUT",
+      headers: {
+        "Content-Type"  : "application/json",
+        "X-Master-Key"  : JSONBIN_API_KEY
+      },
+      body: JSON.stringify(record)
+    });
+    if (!res.ok) throw new Error("Update failed: " + res.status);
+    return res.json();
+  }
+
+  async function recordDevice() {
+    try {
+      const deviceId = await getDeviceId();
+      const nav      = window.navigator;
+      const scr      = window.screen;
+      const now      = new Date().toISOString();
+
+      let record = await fetchBin();
+      if (!record || !Array.isArray(record.devices)) {
+        record = { devices: [] };
+      }
+
+      const existing = record.devices.find(d => d.id === deviceId);
+      if (existing) {
+        existing.lastSeen  = now;
+        existing.visits    = (existing.visits || 1) + 1;
+      } else {
+        record.devices.push({
+          id        : deviceId,
+          firstSeen : now,
+          lastSeen  : now,
+          visits    : 1,
+          platform  : nav.platform || "Unknown",
+          language  : nav.language || "?",
+          screen    : scr.width + "x" + scr.height,
+          timezone  : Intl.DateTimeFormat().resolvedOptions().timeZone,
+          touch     : nav.maxTouchPoints > 0 ? "Yes" : "No"
+        });
+      }
+
+      await updateBin(record);
+    } catch(e) {
+      console.warn("Device registry:", e.message);
+    }
+  }
+
+  /* ─── DISCLAIMER LOGIC ─── */
+  const overlay   = document.getElementById("disclaimer-overlay");
+  const chk1      = document.getElementById("chk1");
+  const btnAgree  = document.getElementById("btn-agree");
+
+  function refreshAgreeBtn() {
+    if (chk1.checked) {
+      btnAgree.classList.add("ready");
+      btnAgree.removeAttribute("disabled");
+    } else {
+      btnAgree.classList.remove("ready");
+      btnAgree.setAttribute("disabled", true);
+    }
+  }
+
+  chk1.addEventListener("change", refreshAgreeBtn);
+
+  btnAgree.addEventListener("click", async () => {
+    btnAgree.textContent = "⏳  Recording access…";
+    btnAgree.classList.remove("ready");
+    btnAgree.setAttribute("disabled", true);
+
+    await recordDevice();
+
+    overlay.style.transition = "opacity 0.4s";
+    overlay.style.opacity    = "0";
+    setTimeout(() => { overlay.style.display = "none"; }, 420);
+  });
+
+  /* ─── ADMIN PANEL ─── */
+  const adminModal     = document.getElementById("admin-modal");
+  const adminClose     = document.getElementById("admin-close");
+  const openAdminBtn   = document.getElementById("open-admin-btn");
+  const passcodeInput  = document.getElementById("admin-passcode-input");
+  const btnAdminLogin  = document.getElementById("btn-admin-login");
+  const adminError     = document.getElementById("admin-error");
+  const adminLoginArea = document.getElementById("admin-login-area");
+  const adminPanelArea = document.getElementById("admin-panel-area");
+
+  openAdminBtn.addEventListener("click", () => {
+    adminModal.classList.add("open");
+    adminLoginArea.style.display = "block";
+    adminPanelArea.style.display = "none";
+    adminPanelArea.innerHTML     = "";
+    passcodeInput.value          = "";
+    adminError.textContent       = "";
+  });
+
+  adminClose.addEventListener("click", () => adminModal.classList.remove("open"));
+  adminModal.addEventListener("click", (e) => { if (e.target === adminModal) adminModal.classList.remove("open"); });
+
+  passcodeInput.addEventListener("keydown", (e) => { if (e.key === "Enter") btnAdminLogin.click(); });
+
+  btnAdminLogin.addEventListener("click", async () => {
+    if (passcodeInput.value.trim() !== ADMIN_PASSCODE) {
+      adminError.textContent = "❌ Incorrect passcode. Try again.";
+      passcodeInput.value = "";
+      passcodeInput.focus();
+      return;
+    }
+    adminError.textContent  = "";
+    adminLoginArea.style.display = "none";
+    adminPanelArea.style.display = "block";
+    adminPanelArea.innerHTML     = '<div class="spinner"></div><p style="text-align:center;color:#666;font-size:13px;">Loading device registry…</p>';
+
+    try {
+      const record  = await fetchBin();
+      const devices = (record && Array.isArray(record.devices)) ? record.devices : [];
+      const total   = devices.length;
+      const today   = new Date().toISOString().slice(0, 10);
+      const todayCount = devices.filter(d => (d.lastSeen || "").startsWith(today)).length;
+
+      let rows = "";
+      devices.slice().reverse().forEach((d, i) => {
+        rows += `
+          <tr>
+            <td>${devices.length - i}</td>
+            <td class="device-id-cell">${d.id}</td>
+            <td>${d.platform || "—"}</td>
+            <td>${d.screen || "—"}</td>
+            <td>${d.language || "—"}</td>
+            <td>${d.timezone || "—"}</td>
+            <td>${d.touch || "—"}</td>
+            <td>${d.visits || 1}</td>
+            <td>${d.firstSeen ? d.firstSeen.replace("T"," ").slice(0,16) : "—"}</td>
+            <td>${d.lastSeen  ? d.lastSeen.replace("T"," ").slice(0,16) : "—"}</td>
+          </tr>`;
+      });
+
+      adminPanelArea.innerHTML = `
+        <div class="admin-stat-row">
+          <div class="admin-stat"><div class="num">${total}</div><div class="lbl">Unique Devices</div></div>
+          <div class="admin-stat"><div class="num">${todayCount}</div><div class="lbl">Active Today</div></div>
+          <div class="admin-stat"><div class="num">${devices.reduce((s,d)=>s+(d.visits||1),0)}</div><div class="lbl">Total Visits</div></div>
+        </div>
+        <div id="devices-table-wrap">
+          <table id="devices-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Device ID (hash)</th>
+                <th>Platform</th>
+                <th>Screen</th>
+                <th>Lang</th>
+                <th>Timezone</th>
+                <th>Touch</th>
+                <th>Visits</th>
+                <th>First Seen</th>
+                <th>Last Seen</th>
+              </tr>
+            </thead>
+            <tbody>${rows || '<tr><td colspan="10" style="text-align:center;color:#999;padding:20px;">No devices recorded yet.</td></tr>'}</tbody>
+          </table>
+        </div>
+        <p style="font-size:11px;color:#aaa;margin-top:12px;text-align:right;">Data stored in JSONbin cloud &bull; IDs are hashed device fingerprints</p>
+      `;
+    } catch(e) {
+      adminPanelArea.innerHTML = `<p style="color:#c0392b;padding:20px;">⚠️ Failed to load data: ${e.message}</p>`;
+    }
+  });
+
+</script>
+
+</body>
+</html>
